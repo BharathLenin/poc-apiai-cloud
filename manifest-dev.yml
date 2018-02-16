@@ -1,0 +1,9 @@
+inherit: manifest-base.yml
+applications:
+- name: apiai-test-poc
+  instances: 1
+  host: apiai-test-poc
+  domains: 
+      - cfapps.io
+  env:
+    JAVA_ENV: 'dev'

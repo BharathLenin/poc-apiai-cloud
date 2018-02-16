@@ -1,0 +1,11 @@
+---
+memory: 1G
+buildpack: https://github.com/cloudfoundry/java-buildpack.git#v3.7
+instances: 1
+path: ./build/libs/com.vogella.springboot-0.0.1-SNAPSHOT.jar
+disk_quota: 1G
+random-route: false
+env:
+ SPRING_PROFILES_ACTIVE: cloud
+ 
+ 
